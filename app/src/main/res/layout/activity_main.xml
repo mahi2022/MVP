@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+android:background="@drawable/mahi22">
+<LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+    <EditText 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="Select Date"
+            android:id="@+id/sd"
+            android:editable="false"/>
+    
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/ic_calendar_interface_symbol_tool"
+    android:id="@+id/datepicker"/>
+          
+</LinearLayout>
+
+
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="EnterMoney"
+                android:inputType="number"
+                android:id="@+id/money"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:id="@+id/name"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Description"
+                android:id="@+id/description"/>
+
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/type"
+                android:id="@+id/type"
+        android:padding="10dp"/>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/save"
+                android:text="SAVE"
+                android:textColor="#fff"
+                android:backgroundTint="#03034b"
+        android:background="@drawable/drawable"
+        android:layout_marginRight="5dp"/>
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/read"
+                android:text="READ"
+                android:textColor="#fff"
+                android:backgroundTint="#03034b"
+        android:background="@drawable/drawable"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <ListView
+                    android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.85"
+                      android:id="@+id/iview"></ListView>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.15"
+                    android:layout_gravity="center">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Income Sum"
+                        android:textStyle="italic"
+                        android:textSize="20sp"
+                android:id="@+id/inc"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Expense Sum"
+                        android:textStyle="italic"
+                        android:id="@+id/exp"
+                        android:textSize="20sp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
